@@ -62,7 +62,7 @@ static void swdptap_turnaround(const swdio_status_t dir)
 	olddir = dir;
 
 #ifdef DEBUG_SWD_BITS
-	DEBUG_INFO("%s", dir ? "\n-> " : "\n<- ");
+	// DEBUG_INFO("%s", dir ? "\n-> " : "\n<- ");
 #endif
 
 	if (dir == SWDIO_STATUS_FLOAT) {

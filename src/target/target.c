@@ -610,7 +610,7 @@ int tc_write(target_s *t, int fd, target_addr_t buf, unsigned int count)
 			if (cnt > count)
 				cnt = count;
 			target_mem_read(t, tmp, buf, cnt);
-			debug_serial_send_stdout(tmp, cnt);
+			// debug_serial_send_stdout(tmp, cnt);
 			count -= cnt;
 			buf += cnt;
 		}
